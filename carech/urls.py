@@ -12,7 +12,7 @@ urlpatterns = [
     path("electronica/", electronica),
     path("ropa/", ropa),
 
-
+    path("paises/", paises),
     path("chile/", chile),
     path("argentina/", argentina),
     path("brasil/", brasil),

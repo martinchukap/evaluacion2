@@ -12,22 +12,29 @@
 <body class ="container mt-5">
     
     <div class = "alert alert-info display-1 text-center">
-        <img src = "{% static 'imagenes/don rene.jpg' %}" width="100px" alt="">
+        
         PAISES
     </div>
 
     <div class ="row"> 
         <div class = "col">
             <a href="/chile" class = "btn p-3 btn-info w-100"> Chile</a>
+            <br>
+            {{pais}}
         </div>   
         <div class = "col">
             <a href="/argentina" class = "btn p-3 btn-success w-100"> Argentina</a>
+            <br>
+            {{pais}}
         </div>
         <div class = "col">
             <a href="/brasil" class = "btn p-3 btn-warning w-100"> Brasil</a>
-
+            <br>
+            {{pais}}
         </div>               
     </div>
+
+    <a href="/" class="btn btn-info mt-5">Volver</a>
 
 </body>
 </html>
