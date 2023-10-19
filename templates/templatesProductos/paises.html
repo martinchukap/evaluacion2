@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,23 +19,43 @@
 
     <div class ="row"> 
         <div class = "col">
-            <a href="/chile" class = "btn p-3 btn-info w-100"> Chile</a>
-            <br>
-            {{pais}}
+
+            <a href="/chile" class = "btn p-3 btn-info w-100" > Chile
+                
+            </a>
+
+            <div class = "">
+               <center><img src ="{% static imagen %}" width="300px" alt=""></center> 
+                <br>
+                {{pais}}
+                <br>
+                {{dato1}}
+                <br>
+                {{dato2}}
+                <br>
+                {{dato3}}
+                <br>
+                
+            </div>
+            
         </div>   
+
+
         <div class = "col">
-            <a href="/argentina" class = "btn p-3 btn-success w-100"> Argentina</a>
-            <br>
-            {{pais}}
+            <a href="/argentina" class = "btn p-3 btn-success w-100" > Argentina
+                
+                
+            </a>
+            
+            
         </div>
         <div class = "col">
-            <a href="/brasil" class = "btn p-3 btn-warning w-100"> Brasil</a>
-            <br>
-            {{pais}}
+            <a href="/brasil" class = "btn p-3 btn-warning w-100" > Brasil</a>
+            
         </div>               
     </div>
 
-    <a href="/" class="btn btn-info mt-5">Volver</a>
+    <a href="/paises" class="btn btn-info mt-5">Volver</a>
 
 </body>
 </html>

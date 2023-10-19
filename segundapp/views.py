@@ -8,10 +8,10 @@ def paises(request):
 
 def chile(request):
     data = {
-        "pais": "Chile",
-        "dato1": "Empanada",
-        "dato2": "Cueca",
-        "dato3": "Gabriel Boric",
+        "pais": "Pais: Chile",
+        "dato1": "Comida tipica: Empanada",
+        "dato2": "Baile tipico: Cueca",
+        "dato3": "Presidente: Gabriel Boric",
         'imagen' : 'imagenes/xchi.png'
     }
 
@@ -19,20 +19,20 @@ def chile(request):
     
 def argentina (request):
     data = {
-        "pais": "Argentina",
-        "dato1": "Asado",
-        "dato2": "Tango",
-        "dato3": "Alberto Ferndaez",
+        "pais": "Pais: Argentina",
+        "dato1": "Comida tipica: Asado",
+        "dato2": "Baile tipico: Tango",
+        "dato3": "Presidente: Alberto Ferndaez",
         'imagen' : 'imagenes/ag.png'
     }
     return render (request, 'templatesProductos/paises.html', data)
 
 def brasil (request):
     data = {
-        "pais": "Brasil",
-        "dato1": "Sarapatel",
-        "dato2": "Zamba",
-        "dato3": "Luiz Inácio lula",
+        "pais": "Pais: Brasil",
+        "dato1": "Comida tipica: Sarapatel",
+        "dato2": "Baile tipico: Zamba",
+        "dato3": "Presidente: Luiz Inácio lula",
         'imagen' : 'imagenes/bra.jpg'
     }
     return render (request, 'templatesProductos/paises.html', data)
